@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload de Arquivo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/upload.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+</head>
+<body>
+    <section class="sidebar">
+        <img class="logo" src="/img/LogoBranco.svg" alt="LogoBranco" />
+        <div class="listalinks">
+            <div class="lista">
+                <img src="/icons/cronograma.svg" alt="" />
+                <a href="">Cronograma</a>
+            </div>
+            <div class="lista">
+                <img src="/icons/trabalhos.svg" alt="" />
+                <a href="">Trabalhos</a>
+            </div>
+            <div class="lista">
+                <img src="/icons/relatorios.svg" alt="" />
+                <a href="">Relatórios</a>
+            </div>
+            <div class="lista">
+                <img src="/icons/discussoes.svg" alt="" />
+                <a href="">Discussões</a>
+            </div>
+            <div class="lista">
+                <img src="/icons/gerencia.svg" alt="" />
+                <a href="">Gerência</a>
+            </div>
+            <div class="lista">
+                <img src="/icons/administracao.svg" alt="" />
+                <a href="">Admin</a>
+            </div>
+            <div class="lista">
+                <img src="/icons/ferramentas.svg" alt="" />
+                <a href="">Ferramentas</a>
+            </div>
+        </div>
+    </section>
+    <div class="conteudo">
+        <div class="container">
+            <form class="area-upload">
+                <div class="esquerdo">
+                    <div class="drop_box">
+
+                        <svg width="246" height="140" viewBox="0 0 246 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="mask0_455_714" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
+                                width="246" height="140">
+                                <path d="M0.773438 0.718262H245.37V139.072H0.773438V0.718262Z" fill="white" />
+                            </mask>
+                            <g mask="url(#mask0_455_714)">
+                                <path
+                                    d="M191.37 28.465C182.272 28.465 173.468 30.7971 165.655 35.184C156.141 14.5877 135.634 0.718262 112.668 0.718262C81.3254 0.718262 55.653 26.1251 54.1342 57.9341C39.7408 59.696 27.398 69.5111 22.0631 83.2102C10.1019 86.2827 1.2168 97.4122 1.2168 110.636C1.2168 126.22 13.5596 138.898 28.7356 138.898H109.164V94.4428H95.8268C93.2441 94.4428 92.3807 91.4179 93.8686 89.5847C101.913 79.6587 113.169 69.7288 121.214 59.8029C121.804 59.0744 122.501 58.8091 123.172 58.8566C123.843 58.8091 124.541 59.0744 125.13 59.8029C133.175 69.7288 144.431 79.6587 152.472 89.5847C153.96 91.4179 153.096 94.4428 150.514 94.4428H137.176V138.898H191.366C221.012 138.898 245.127 114.128 245.127 83.6814C245.127 53.2344 221.012 28.465 191.37 28.465Z"
+                                    fill="#E54C3C" />
+                            </g>
+                        </svg>
+                        <header>
+                            <h3>Arraste seu arquivo aqui</h3>
+                        </header>
+                        <p>Arquivos suportados: PDF, TEXT, DOC , DOCX</p>
+                        <input type="file" accept=".doc,.docx,.pdf" id="fileID" style="display:none;" name="dados">
+                        <button class="btn" type="submit">Selecionar arquivo</button>
+                    </div>
+                </div>
+                <div class="area-dados">
+                    <div class="input_container">
+                        <p class="titulo">Título do projeto</p>
+                        <input type="text" name="titulo_projeto" autocomplete="off"/>
+                    </div>
+                    <div class="input_container">
+                        <p class="titulo">Descrição do projeto</p>
+                        <textarea name="descricao_projeto" cols="40" rows="5"></textarea>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

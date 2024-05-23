@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    background-color: #fff;
+    margin: 0;
+    display: flex;
+}
+
+.conteudo {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 15px;
+    width: 50%;
+    display: flex;
+    box-shadow: 1px 1px 15px #7f3c3c3c;
+}
+
+.area-upload {
+    display: flex;
+    width: 100%;
+    font-family: 'Poppins';
+}
+
+.esquerdo {
+    flex: 1;
+    width: 50%;
+}
+
+.area-dados {
+    background-color: #2980B5;
+    width: 50%;
+    flex: 1;
+    border-radius: 35px 15px 15px 35px;
+    align-items: start;
+    padding: 10px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.drop_box {
+    margin: 20px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 3px dotted #c5c3c3;
+    border-radius: 5px;
+}
+
+.drop_box h4 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #2e2e2e;
+}
+
+.drop_box p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    color: #a3a3a3;
+}
+
+.btn {
+    text-decoration: none;
+    background-color: #2980B5;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+    border-radius: 20px;
+}
+
+.btn:hover {
+    text-decoration: none;
+    background-color: #2184c2;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: 1px solid #2184c2;
+    cursor: pointer;
+}
+
+.form input {
+    margin: 10px 0;
+    width: 100%;
+    background-color: #e2e2e2;
+    border: none;
+    outline: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+}
+
+.titulo {
+    margin: 20px 0 5px 0px;
+    color: #FFF;
+    font-weight: 600;
+}
+
+.esquerdo h3 {
+    font-size: 14px;
+}
+
+.area-dados input {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.area-dados textarea {
+    resize: none;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.input_container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.area-dados input:focus, .area-dados textarea:focus {
+    outline: none;
+}
