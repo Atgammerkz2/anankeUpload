@@ -1,53 +1,99 @@
+/* Necessário para não haver rolagens horizontais quando movermos os elementos */
+html,
 body {
-    margin: 0px;
+    overflow-x: hidden;
 }
 
-.sidebar {
-    background-color: #2980b5;
+.sidebar header {
+    background-color: #fff;
+    padding: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+.sidebar .menu-anchor {
+    width: 40px;
+    height: 32px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    text-indent: -9999px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.sidebar .menu-anchor:before {
+    content: "";
+    display: block;
+    margin: 7px auto;
+    width: 70%;
+    height: 0.25em;
+    background: #0667a3;
+    box-shadow: 0 .45em 0 0 #0667a3, 0 .9em 0 0 #0667a3;
+    border-radius: 20px;
+}
+
+.menu-active .menu-anchor {
+    background: #fff;
+}
+
+.sidebar menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
     width: 220px;
-    height: 100vh; 
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
+    height: 100%;
     padding-top: 10px;
+    background: #0667a3;
+    box-shadow: inset -5px -10px 10px 0 rgba(133, 133, 133, 0.3);
+    -webkit-transform: translateX(-220px);
+    -moz-transform: translateX(-220px);
+    -ms-transform: translateX(-220px);
+    transform: translateX(-220px);
+    -webkit-transition: all .25s linear;
+    -moz-transition: all .25s linear;
+    -ms-transition: all .25s linear;
+    transition: all .25s linear;
+    font: 100% arial, verdana, tahoma, sans-serif;
 }
 
-.logo {
-    width: 156px;
-    height: 61px;
-    margin-bottom: 20px; 
-}
-
-a {
-    color: #f9fdff;
+.sidebar menu li a {
+    display: block;
+    margin: 0 10px;
+    padding: 10px;
+    color: #FFF;
     text-decoration: none;
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
-    font-weight: 400; 
 }
 
-.listalinks {
-    width: 70%; 
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
+.sidebar menu li a:hover {
+    background: #003f66;
+    color: #0667a3;
 }
 
-.lista {
-    display: flex; 
-    align-items: center; 
-    width: 90%; 
-    padding: 12px;
-    border-radius: 20px; 
-    transition: background-color 0.5s ease, box-shadow 0.5s ease; /* Aumenta a duração e suaviza a transição */
+.sidebar header, .responseMenu {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition: all .25s linear;
+    -moz-transition: all .25s linear;
+    -ms-transition: all .25s linear;
+    transition: all .25s linear;
 }
 
-.lista:hover {
-    background-color: #1a6f99; 
-    border-radius: 20px; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); /* Adiciona uma sombra suave ao passar o mouse */
+/* Com a classe menu-active na tag HTML */
+.menu-active menu {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
 }
 
-.lista img {
-    margin-right: 10px; 
+.menu-active header,
+.menu-active .responseMenu {
+    -webkit-transform: translateX(220px);
+    -moz-transform: translateX(220px);
+    -ms-transform: translateX(220px);
+    transform: translateX(220px);
 }

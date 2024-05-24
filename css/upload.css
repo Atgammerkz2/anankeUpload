@@ -1,56 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-/* RESET */
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     background-color: #fff;
-    margin: 0;
-    display: flex;
+    margin: 0px;
+    padding: 0px;
 }
 
 .conteudo {
-    flex-grow: 1;
+    margin: 20px;
+    padding: 0;
     display: flex;
-    justify-content: center;
     align-items: center;
-}
-
-.container {
-    background-color: #fff;
-    border-radius: 15px;
-    width: 50%;
-    height: 60%;
-    display: flex;
-    box-shadow: 1px 1px 15px #0000007F;
+    justify-content: center;
 }
 
 .area-upload {
     display: flex;
-    width: 100%;
     font-family: 'Poppins';
-}
-
-.esquerdo {
-    flex: 1;
-    width: 50%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-
-.area-dados {
-    background-color: #2184c2;
-    flex: 1;
     border-radius: 15px;
-    align-items: start;
-    padding: 10px 40px;
-    display: flex;
-    flex-direction: column;
+    box-shadow: 1px 1px 15px #0000007F;
+    height: 60vh;
 }
 
 .drop_box {
@@ -60,9 +30,9 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border: 3px dotted #c5c3c3;
     border-radius: 5px;
-    height: 78%;
+    width: 50%;
+    border: 3px dotted #c2c2c2;
 }
 
 .drop_box h4 {
@@ -76,6 +46,15 @@ body {
     margin-bottom: 20px;
     font-size: 12px;
     color: #a3a3a3;
+}
+
+.area-dados {
+    background-color: #2184c2;
+    border-radius: 15px;
+    align-items: start;
+    padding: 10px 40px;
+    display: flex;
+    flex-direction: column;
 }
 
 .btn {
@@ -136,13 +115,11 @@ body {
     border-radius: 5px;
     margin: 0;
     width: 100%;
-    box-sizing: border-box;
 }
 
 .input_container {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     width: 100%;
 }
 
