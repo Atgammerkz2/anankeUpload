@@ -28,8 +28,8 @@ body {
     margin: 7px auto;
     width: 70%;
     height: 0.25em;
-    background: #0667a3;
-    box-shadow: 0 .45em 0 0 #0667a3, 0 .9em 0 0 #0667a3;
+    background: #2184c2;
+    box-shadow: 0 .45em 0 0 #2184c2, 0 .9em 0 0 #2184c2;
     border-radius: 20px;
 }
 
@@ -45,7 +45,7 @@ body {
     width: 220px;
     height: 100%;
     padding-top: 10px;
-    background: #0667a3;
+    background: #2184c2;
     box-shadow: inset -5px -10px 10px 0 rgba(133, 133, 133, 0.3);
     -webkit-transform: translateX(-220px);
     -moz-transform: translateX(-220px);
@@ -68,7 +68,7 @@ body {
 
 .sidebar menu li a:hover {
     background: #003f66;
-    color: #0667a3;
+    color: #2184c2;
 }
 
 .sidebar header, .responseMenu {
